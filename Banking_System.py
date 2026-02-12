@@ -7,13 +7,10 @@ class BankAccount:
         self.acc_no = acc_no
         self.balance = balance
 
-    def deposit(self, amount):
-        if self.balance>=BankAccount.min_balance:
-            self.balance += amount
-            print("deposited successfully.")
-            print("Updated Balance:",self.balance)
-        else:
-            print("Invalid")
+    def deposit(self, amount):   
+        self.balance += amount
+        print("deposited successfully.")
+        print("Updated Balance:",self.balance)
 
     def withdraw(self, amount):
         if self.balance - amount >= BankAccount.min_balance and amount>0:
