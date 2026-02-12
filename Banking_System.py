@@ -13,7 +13,7 @@ class BankAccount:
         print("Updated Balance:",self.balance)
 
     def withdraw(self, amount):
-        if self.balance - amount >= BankAccount.min_balance:
+        if self.balance - amount >= BankAccount.min_balance and amount>0:
             self.balance -= amount
             print("withdrawn successfully")
             print("Remaining Balance:",self.balance)
