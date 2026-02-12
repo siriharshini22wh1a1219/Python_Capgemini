@@ -15,10 +15,10 @@ class BankAccount:
     def withdraw(self, amount):
         if self.balance - amount >= BankAccount.min_balance:
             self.balance -= amount
-            print(f"{amount} withdrawn successfully.")
-            print(f"Remaining Balance: {self.balance}")
+            print("withdrawn successfully")
+            print("Remaining Balance:",self.balance)
         else:
-            print("Withdrawal denied! Minimum balance must be maintained.")
+            print("Withdrawal denied")
    
     def display_details(self):
         print("Account Holder:", self.name)
