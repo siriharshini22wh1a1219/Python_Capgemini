@@ -5,7 +5,7 @@ class BankAccount:
     def __init__(self, name, acc_no, balance):
         self.name = name
         self.acc_no = acc_no
-        self.balance = balance+BankAccount.min_balance
+        self.balance = balance + BankAccount.min_balance
 
     def deposit(self, amount):   
         self.balance += amount
